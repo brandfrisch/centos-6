@@ -18,6 +18,9 @@ APT::Get::Install-Suggests 'false'; \n\
 APT::Get::Assume-Yes "true"; \n\
 APT::Get::force-yes "true";" > /etc/apt/apt.conf.d/00-general
 
+# systemd tweaks
+RUN rm -rf /lib/systemd/system/getty*;
+
 # install
 RUN apt-get update
 RUN apt-get install -y apt-utils
