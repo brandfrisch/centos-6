@@ -1,1 +1,1 @@
-# docker-debian-8
+# docker-centos-6
