@@ -13,7 +13,7 @@ RUN yum -y install epel-release
 RUN yum -y install ca-certificates python python-httplib2 sudo unzip curl net-tools nc
 
 # install goss
-RUN curl -L https://github.com/aelsabbahy/goss/releases/download/v0.2.3/goss-linux-amd64 -o /usr/local/bin/goss
+RUN curl -L https://github.com/aelsabbahy/goss/releases/download/v0.2.6/goss-linux-amd64 -o /usr/local/bin/goss
 RUN chmod +rx /usr/local/bin/goss
 
 # install docker-detect-proxy.sh
